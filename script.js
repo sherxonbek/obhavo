@@ -87,6 +87,8 @@ async function weather(city) {
 
     if ([1240, 1183, 1189, 1195].includes(code)) {
         obhavo.classList.add("Rain");
+    } else if (code === 1003) {
+        obhavo.classList.add("Partly-cloudy");
     } else if (code === 1000) {
         obhavo.classList.add("Sunny");
     } else if (code === 1006 || code === 1003){
